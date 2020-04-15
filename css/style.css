@@ -1,0 +1,135 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.home-page header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 20px 0;
+}
+
+.home-page header nav .dropdown {
+  margin-top: -13px;
+}
+.home-page .uk-card {
+  border: 1px solid #aaa;
+}
+.home-page .uk-card img {
+  width: 100%;
+  height: 300px;
+}
+
+.city {
+  text-align: center;
+}
+
+.city .circle {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background-color: dodgerblue;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
+.city .circle span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* slider */
+.swiper-container {
+  width: 100%;
+  height: 60vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(45deg, #f9d4d4 50%, #8d0030 50%);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.slide-bootstrap {
+  position: relative;
+}
+.swiper-slide .info-slider {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 50px;
+}
+
+.swiper-slide .info-slider h2 {
+  color: #fff;
+}
+
+.city {
+  margin-top: 100px;
+}
+
+.city h1 {
+  text-shadow: 2px 3px 10px #aaa;
+  margin-bottom: 50px;
+}
+
+.city .city-name {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #a58c8c;
+  margin: 10px auto;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.city .city-name:hover {
+  background-color: #a482a8;
+  color: #8d0030;
+  box-shadow: 1px 1px 10px 1px #aaa;
+  font-weight: bold;
+}
+
+.city .city-name span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background-color: #ecebeb;
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 770px) {
+  .swiper-slide {
+    background: #8d0030;
+  }
+
+  .swiper-slide img {
+    display: none;
+  }
+}
